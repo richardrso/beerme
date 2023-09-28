@@ -15,3 +15,8 @@ BeerMe! is a meticulously crafted CRUD (Create, Read, Update, Delete) applicatio
 ## Why beerme!?
 
 In summary, beerme! It's more than just a college assignment; it's a testament to our dedication and competence in web development. Whether we're striving for academic excellence or looking to enhance our portfolio, beerme! Exemplifies our commitment to creating practical and effective solutions. Cheers to our college assignment success with beerme!
+
+## Authors
+
+- [@richardrso](https://github.com/richardrso)
+- [@RonanBenitis](https://github.com/RonanBenitis)
