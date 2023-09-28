@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>beerme!</title>
+  </head>
+  <body>
+    <header>
+      <h1>beerme!</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Beers</a></li>
+        <li><a href="#">Breweries</a></li>
+        <li><a href="#">Search</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- Section for user beer reviews -->
+      <section>
+        <h2>Beer Reviews</h2>
+        <div class="user-review">
+          <form>
+            <label for="beer-type">Type of Beer:</label>
+            <input type="text" id="beer-type" name="beer-type" required />
+
+            <label for="beer-label">Label:</label>
+            <input type="text" id="beer-label" name="beer-label" required />
+
+            <label for="beer-notes">Notes:</label>
+            <textarea
+              id="beer-notes"
+              name="beer-notes"
+              rows="4"
+              required
+            ></textarea>
+
+            <label for="beer-rating">Star Rating:</label>
+            <input
+              type="number"
+              id="beer-rating"
+              name="beer-rating"
+              min="1"
+              max="5"
+              required
+            />
+
+            <button type="submit">Submit Review</button>
+          </form>
+        </div>
+      </section>
+      <section>
+        <h2>Featured Beers</h2>
+        <div class="beer-card">
+          <h3>Beer Name 1</h3>
+          <img
+            class="beer-image"
+            src=""
+            alt="Beer Image"
+          />
+          <p>
+            Description: This is a fantastic beer with a rich flavor profile.
+          </p>
+        </div>
+
+        <div class="beer-card">
+          <h3>Beer Name 2</h3>
+          <img src="#" alt="Beer Image" />
+          <p>
+            Description: A smooth and refreshing beer that pairs well with any
+            occasion.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>Top Breweries</h2>
+        <div class="brewery-card">
+          <h3>Brewery Name 1</h3>
+          <img
+            class="beer-image"
+            src="#"
+            alt="Brewery Image"
+          />
+          <p>
+            Description: A top-rated brewery known for its craftmanship and
+            quality.
+          </p>
+        </div>
+
+        <div class="brewery-card">
+          <h3>Brewery Name 2</h3>
+          <img src="#" alt="Brewery Image" />
+          <p>
+            Description: Crafting unique and innovative beers for beer
+            enthusiasts.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
