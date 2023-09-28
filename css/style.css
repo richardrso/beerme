@@ -1,0 +1,145 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Set a background color and text color */
+body {
+  background-color: #f3f3f3;
+  color: #333;
+}
+
+/* Style the header */
+header {
+  background-color: #ffcd00;
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style-type: none;
+  background-color: #ffcd00;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Style the main content */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Style the featured beer card */
+.beer-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.beer-card h2 {
+  font-size: 20px;
+}
+
+/* Style the top brewery card */
+.brewery-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.brewery-card h2 {
+  font-size: 20px;
+}
+
+/* Style the user beer review section */
+.user-review {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.user-review h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.user-review form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-review label {
+  width: 45%;
+  margin-bottom: 10px;
+}
+
+.user-review input[type="text"],
+.user-review input[type="number"],
+.user-review textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.user-review button {
+  background-color: #ffcd00;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.user-review button:hover {
+  background-color: #ffea84;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+/* Add this CSS to style the beer image */
+.beer-image {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+header h1,
+nav a {
+  color: rgb(251, 252, 252);
+}
