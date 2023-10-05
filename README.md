@@ -20,3 +20,5 @@ In summary, beerme! It's more than just a college assignment; it's a testament t
 
 - [@richardrso](https://github.com/richardrso)
 - [@RonanBenitis](https://github.com/RonanBenitis)
+- [@Reyralona](https://github.com/Reyralona)
+- [@MoisesLoesch](https://github.com/MoisesLoesch)
