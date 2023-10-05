@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
     <title>beerme!</title>
   </head>
   <body>
@@ -47,6 +47,39 @@
               max="5"
               required
             />
+            <label for="beer-family">Beer Family:</label>
+            <input type="text" id="beer-family" name="beer-family" required />
+
+            <label for="beer-ibu">IBU (International Bitterness Units):</label>
+            <input
+              type="number"
+              id="beer-ibu"
+              name="beer-ibu"
+              min="0"
+              required
+            />
+
+            <label for="beer-abv">ABV (Alcohol by Volume) (%):</label>
+            <input
+              type="number"
+              id="beer-abv"
+              name="beer-abv"
+              step="0.1"
+              min="0"
+              required
+            />
+
+            <label for="beer-color">Color:</label>
+            <input type="text" id="beer-color" name="beer-color" required />
+
+            <label for="beer-body">Body:</label>
+            <input type="text" id="beer-body" name="beer-body" required />
+
+            <label for="beer-date">Date of Beer Consumption:</label>
+            <input type="date" id="beer-date" name="beer-date" required />
+
+            <label for="beer-brewery">Brewery:</label>
+            <input type="text" id="beer-brewery" name="beer-brewery" required />
 
             <button type="submit">Submit Review</button>
           </form>
@@ -56,11 +89,7 @@
         <h2>Featured Beers</h2>
         <div class="beer-card">
           <h3>Beer Name 1</h3>
-          <img
-            class="beer-image"
-            src=""
-            alt="Beer Image"
-          />
+          <img class="beer-image" src="" alt="Beer Image" />
           <p>
             Description: This is a fantastic beer with a rich flavor profile.
           </p>
@@ -79,11 +108,7 @@
         <h2>Top Breweries</h2>
         <div class="brewery-card">
           <h3>Brewery Name 1</h3>
-          <img
-            class="beer-image"
-            src="#"
-            alt="Brewery Image"
-          />
+          <img class="beer-image" src="#" alt="Brewery Image" />
           <p>
             Description: A top-rated brewery known for its craftmanship and
             quality.
