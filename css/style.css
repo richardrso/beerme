@@ -17,7 +17,7 @@ body {
 
 /* Style the header */
 header {
-  background-color: #ffcd00;
+  background-color: #ffc000;
   color: #333;
   text-align: center;
   padding: 20px 0;
@@ -26,7 +26,7 @@ header {
 /* Style the navigation menu */
 nav ul {
   list-style-type: none;
-  background-color: #ffcd00;
+  background-color: #ffc000;
   text-align: center;
   padding: 10px 0;
 }
@@ -113,7 +113,7 @@ section {
 }
 
 .user-review button {
-  background-color: #ffcd00;
+  background-color: #ffc000;
   color: #333;
   border: none;
   padding: 10px 20px;
@@ -142,4 +142,37 @@ footer {
 header h1,
 nav a {
   color: rgb(251, 252, 252);
+}
+
+/* Style the new beer review input fields */
+.user-review label {
+  width: 45%;
+  margin-bottom: 10px;
+}
+
+.user-review input[type="text"],
+.user-review input[type="number"],
+.user-review textarea,
+.user-review input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+/* Style the button */
+.user-review button {
+  background-color: #ffc000;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.user-review button:hover {
+  background-color: #ffea84;
 }
