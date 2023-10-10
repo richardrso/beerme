@@ -21,6 +21,10 @@ header {
   color: #333;
   text-align: center;
   padding: 20px 0;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 100;
 }
 
 /* Style the navigation menu */
@@ -45,6 +49,7 @@ nav a {
 /* Style the main content */
 main {
   padding: 20px;
+  padding-top: 100px; /* Adjust this value as needed */
 }
 
 section {
