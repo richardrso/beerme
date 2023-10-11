@@ -1,4 +1,3 @@
-/* Reset some default browser styles */
 body,
 h1,
 h2,
@@ -9,23 +8,20 @@ ul {
   font-family: Arial, sans-serif;
 }
 
-/* Set a background color and text color */
 body {
   background-color: #f3f3f3;
   color: #333;
 }
 
-/* Style the main content */
 main {
   padding: 20px;
-  padding-top: 100px; /* Adjust this value as needed */
+  padding-top: 100px;
 }
 
 section {
   margin-bottom: 20px;
 }
 
-/* Style the featured beer card */
 .beer-card {
   background-color: #fff;
   border-radius: 5px;
@@ -38,20 +34,6 @@ section {
   font-size: 20px;
 }
 
-/* Style the top brewery card */
-.brewery-card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.brewery-card h2 {
-  font-size: 20px;
-}
-
-/* Style the user beer review section */
 .user-review {
   background-color: #fff;
   border-radius: 5px;
@@ -86,34 +68,13 @@ section {
   margin-bottom: 10px;
 }
 
-.user-review button {
-  background-color: #ffc000;
-  color: #333;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 3px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.user-review button:hover {
-  background-color: #ffea84;
-}
-
-/* Style the footer */
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
   padding: 10px 0;
 }
-/* Add this CSS to style the beer image */
-.beer-image {
-  max-width: 100%;
-  max-height: 200px;
-}
 
-/* Style the new beer review input fields */
 .user-review label {
   width: 45%;
   margin-bottom: 10px;
@@ -130,10 +91,9 @@ footer {
   margin-bottom: 10px;
 }
 
-/* Style the button */
 .user-review button {
-  background-color: #ffc000;
-  color: #333;
+  background-color: #f5b800;
+  color: #ffffff;
   border: none;
   padding: 10px 20px;
   border-radius: 3px;
@@ -143,10 +103,9 @@ footer {
 }
 
 .user-review button:hover {
-  background-color: #ffea84;
+  background-color: #3c3c3a;
 }
 
-/* Star Rating */
 .rating {
   display: flex;
   flex-direction: row-reverse;
@@ -201,7 +160,7 @@ footer {
   padding: 1em;
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
 .menu {
