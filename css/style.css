@@ -22,6 +22,15 @@ section {
   margin-bottom: 20px;
 }
 
+.dropdown-container{
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
 .beer-card {
   background-color: #fff;
   border-radius: 5px;
