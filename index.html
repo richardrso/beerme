@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
     <title>beerme!</title>
   </head>
   <body>
@@ -21,7 +22,18 @@
     ></script>
     <header>
       <section class="top-nav">
-        <div style="font-size: 30px">beerme!</div>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#"
+                  ><img id="logo" src="/images/beerme-logo.svg" alt="Logo"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
         <input id="menu-toggle" type="checkbox" />
         <label class="menu-button-container" for="menu-toggle">
           <div class="menu-button"></div>
@@ -55,11 +67,11 @@
         <div class="user-review">
           <form>
             <label for="beer-type">Type of Beer:</label>
-            <!-- RONAN - Faz dropdown com todos tipos cerveja -->
+            
             <input type="text" id="beer-type" name="beer-type" required />
 
             <label for="beer-label">Label:</label>
-            <!-- RONAN - Faz dropdown com todos tipos cerveja -->
+            
             <input type="text" id="beer-label" name="beer-label" required />
 
             <label for="beer-notes">Notes:</label>

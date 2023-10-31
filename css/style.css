@@ -22,7 +22,7 @@ section {
   margin-bottom: 20px;
 }
 
-.dropdown-container{
+.dropdown-container {
   flex-direction: column;
   /* flex-wrap: wrap; */
   width: 100%;
@@ -274,4 +274,15 @@ footer {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+}
+
+.navbar-nav {
+  float: none;
+  margin: auto;
+}
+
+#logo {
+  width: 135px;
+  height: auto;
+  float: right ;
 }
