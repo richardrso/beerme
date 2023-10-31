@@ -3,13 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/pages/history/history.css" />
+
     <title>beerme!</title>
   </head>
   <body>
     <header>
       <section class="top-nav">
         <div style="font-size: 30px">beerme!</div>
+
         <input id="menu-toggle" type="checkbox" />
         <label class="menu-button-container" for="menu-toggle">
           <div class="menu-button"></div>
@@ -39,55 +58,381 @@
     </header>
     <main>
       <section class="beer-card">
-        <h2>Beer Name</h2>
-        <!-- Replace with actual beer name -->
-        <ul>
-          <li>
-            <strong>Type of Beer:</strong>
-            <!-- Replace with actual type -->
-          </li>
-          <li>
-            <strong>Label:</strong>
-            <!-- Replace with actual label -->
-          </li>
-          <li>
-            <strong>Beer Family:</strong>
-            <!-- Replace with actual family -->
-          </li>
-          <li>
-            <strong>ABV (Alcohol by Volume) (%):</strong>
-            <!-- Replace with actual brewery -->
-          </li>
-          <li>
-            <strong>IBU (International Bitterness Units):</strong>
-            <!-- Replace with actual notes -->
-          </li>
-          <li>
-            <strong>IBU (International Bitterness Units):</strong>
-            <!-- Replace with actual IBU -->
-          </li>
-          <li>
-            <strong>ABV (Alcohol by Volume) (%):</strong>
-            <!-- Replace with actual ABV -->
-          </li>
-          <li>
-            <strong>Color:</strong>
-            <!-- Replace with actual color -->
-          </li>
-          <li>
-            <strong>Body:</strong>
-            <!-- Replace with actual body -->
-          </li>
-          <li>
-            <strong>Date of Beer Consumption:</strong>
-            <!-- Replace with actual rating -->
-          </li>
-          <li>
-            <strong>Star Rating:</strong>
-            <!-- Replace with actual date -->
-          </li>
-        </ul>
+        <div class="card-deck">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/img/roletaRussa--beer.jpg"
+              alt="Amarrar no src o pull-img do database"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Roleta Russa - <strong>(American) Indian Pale Ale</strong>
+              </h5>
+              <div class="rating">
+                <input type="radio" name="rating" value="5" id="5" /><label
+                  for="5"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="4" id="4" /><label
+                  for="4"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="3" id="3" /><label
+                  for="3"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="2" id="2" /><label
+                  for="2"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="1" id="1" /><label
+                  for="1"
+                  >☆</label
+                >
+              </div>
+              <p class="card-text">
+                Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta
+                quium dia nois paga. Praesent malesuada urna nisi, quis volutpat
+                erat hendrerit non. Nam vulputate dapibus. Mé faiz elementum
+                girarzis, nisi eros vermeio. Tá deprimidis, eu conheço uma
+                cachacis que pode alegrar sua vidis. Paisis, filhis, espiritis
+                santis. Manduma pindureta quium dia nois paga. Detraxit
+                consequat et quo num tendi nada. Mais vale um bebadis
+                conhecidiss, que um alcoolatra anonimis.
+              </p>
+            </div>
+
+            <p class="d-inline-flex gap-1">
+              <a
+                class="btn btn-primary"
+                id="button-seeMore"
+                data-bs-toggle="collapse"
+                href="#card0"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                See more info
+              </a>
+            </p>
+            <div class="collapse" id="card0">
+              <div class="card-footer">
+                <small class="text-muted">Beer Family: Ale</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">ABV: 5,6%</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">IBU: 58</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Color: Ambar</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Body: Médio</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Date cons.: 22/10/2023</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/img/indica--beer.jpeg"
+              alt="Amarrar no src o pull-img do database"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Colorado Indica - <strong>(English) Indian Pale Ale</strong>
+              </h5>
+              <div class="rating">
+                <input type="radio" name="rating" value="5" id="5" /><label
+                  for="5"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="4" id="4" /><label
+                  for="4"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="3" id="3" /><label
+                  for="3"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="2" id="2" /><label
+                  for="2"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="1" id="1" /><label
+                  for="1"
+                  >☆</label
+                >
+              </div>
+              <p class="card-text">
+                Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta
+                quium dia nois paga. Praesent malesuada urna nisi, quis volutpat
+                erat hendrerit non. Nam vulputate dapibus. Mé faiz elementum
+                girarzis, nisi eros vermeio. Tá deprimidis, eu conheço uma
+                cachacis que pode alegrar sua vidis. Paisis, filhis, espiritis
+                santis. Manduma pindureta quium dia nois paga. Detraxit
+                consequat et quo num tendi nada. Mais vale um bebadis
+                conhecidiss, que um alcoolatra anonimis.
+              </p>
+            </div>
+
+            <p class="d-inline-flex gap-1">
+              <a
+                class="btn btn-primary"
+                id="button-seeMore"
+                data-bs-toggle="collapse"
+                href="#card1"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                See more info
+              </a>
+            </p>
+            <div class="collapse" id="card1">
+              <div class="card-footer">
+                <small class="text-muted">Beer Family: Ale</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">ABV: 7%</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">IBU: 45</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Color: Ambar</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Body: Médio</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Date Cons.: 22/10/2023</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Label image" />
+            <div class="card-body">
+              <h5 class="card-title">
+                #Label# - <strong>#TypeOfBeer#</strong>
+              </h5>
+              <div class="rating">
+                <input type="radio" name="rating" value="5" id="5" /><label
+                  for="5"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="4" id="4" /><label
+                  for="4"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="3" id="3" /><label
+                  for="3"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="2" id="2" /><label
+                  for="2"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="1" id="1" /><label
+                  for="1"
+                  >☆</label
+                >
+              </div>
+              <p class="card-text">#NOTES#</p>
+            </div>
+
+            <p class="d-inline-flex gap-1">
+              <a
+                class="btn btn-primary"
+                id="button-seeMore"
+                data-bs-toggle="collapse"
+                href="#card2"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                See more info
+              </a>
+            </p>
+            <div class="collapse" id="card2">
+              <div class="card-footer">
+                <small class="text-muted">#Beer Family#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#ABV#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#IBU#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#Color#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#Body#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#Date Cons#</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Label image" />
+            <div class="card-body">
+              <h5 class="card-title">
+                #Label# - <strong>#TypeOfBeer#</strong>
+              </h5>
+              <div class="rating">
+                <input type="radio" name="rating" value="5" id="5" /><label
+                  for="5"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="4" id="4" /><label
+                  for="4"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="3" id="3" /><label
+                  for="3"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="2" id="2" /><label
+                  for="2"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="1" id="1" /><label
+                  for="1"
+                  >☆</label
+                >
+              </div>
+              <p class="card-text">#NOTES#</p>
+            </div>
+
+            <p class="d-inline-flex gap-1">
+              <a
+                class="btn btn-primary"
+                id="button-seeMore"
+                data-bs-toggle="collapse"
+                href="#card2"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                See more info
+              </a>
+            </p>
+            <div class="collapse" id="card2">
+              <div class="card-footer">
+                <small class="text-muted">#Beer Family#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#ABV#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#IBU#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#Color#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#Body#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#Date Cons#</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Label image" />
+            <div class="card-body">
+              <h5 class="card-title">
+                #Label# - <strong>#TypeOfBeer#</strong>
+              </h5>
+              <div class="rating">
+                <input type="radio" name="rating" value="5" id="5" /><label
+                  for="5"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="4" id="4" /><label
+                  for="4"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="3" id="3" /><label
+                  for="3"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="2" id="2" /><label
+                  for="2"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="1" id="1" /><label
+                  for="1"
+                  >☆</label
+                >
+              </div>
+              <p class="card-text">#NOTES#</p>
+            </div>
+
+            <p class="d-inline-flex gap-1">
+              <a
+                class="btn btn-primary"
+                id="button-seeMore"
+                data-bs-toggle="collapse"
+                href="#card2"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                See more info
+              </a>
+            </p>
+            <div class="collapse" id="card2">
+              <div class="card-footer">
+                <small class="text-muted">#Beer Family#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#ABV#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#IBU#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#Color#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#Body#</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">#Date Cons#</small>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
