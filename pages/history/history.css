@@ -1,10 +1,21 @@
 .card{
-  position: static;
+  position: relative;
   min-width: 29vw;
   margin-top: 20px;
+  z-index: 0;
 }
 
 /* inner card */
+.card > a{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.card > a > img{
+  max-width: 35px;
+}
+
 .card > img{
   width: fit-content;
   max-height: 300px;
@@ -14,6 +25,10 @@
 
 .rating > label{
   font-size: 35px;
+}
+
+.btn{
+  color: #fff;
 }
 
 #button-seeMore {

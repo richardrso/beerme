@@ -56,11 +56,15 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
     </header>
     <main>
       <section class="beer-card">
-        <!-- container pai card deck bootstrap -->
         <div class="card-deck">
 
-          <!-- Cartão unitários: example 1 -->
+          <!-- Single card group -->
           <div class="card">
+            <a href="#editBeerCard" data-toggle="modal">
+              <img 
+                src="/img/button--edit.png" 
+                alt="Imagem do botão de edição ou deleção">
+            </a>
             <img class="card-img-top" src="/img/roletaRussa--beer.jpg" alt="Amarrar no src o pull-img do database">
             <div class="card-body">
               <h5 class="card-title">Roleta Russa - <strong>(American) Indian Pale Ale</strong></h5>
@@ -119,8 +123,13 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
             </div>
           </div>
 
-          <!-- Cartão unitários: example 2-->
+          <!-- Single card group -->
           <div class="card">
+            <a href="#editBeerCard" data-toggle="modal">
+              <img 
+                src="/img/button--edit.png" 
+                alt="Imagem do botão de edição ou deleção">
+            </a>
             <img class="card-img-top" src="/img/indica--beer.jpeg" alt="Amarrar no src o pull-img do database">
             <div class="card-body">
               <h5 class="card-title">Colorado Indica - <strong>(English) Indian Pale Ale</strong></h5>
@@ -179,8 +188,13 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
             </div>
           </div>
 
-          <!-- Cartão unitários -->
+          <!-- Single card group -->
           <div class="card">
+            <a href="#editBeerCard" data-toggle="modal">
+              <img 
+                src="/img/button--edit.png" 
+                alt="Imagem do botão de edição ou deleção">
+            </a>
             <img class="card-img-top" src="..." alt="Label image">
             <div class="card-body">
               <h5 class="card-title">#Label# - <strong>#TypeOfBeer#</strong></h5>
@@ -237,8 +251,13 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
             </div>
           </div>
 
-          <!-- Cartão unitários -->
+          <!-- Single card group -->
           <div class="card">
+            <a href="#editBeerCard" data-toggle="modal">
+              <img 
+                src="/img/button--edit.png" 
+                alt="Imagem do botão de edição ou deleção">
+            </a>
             <img class="card-img-top" src="..." alt="Label image">
             <div class="card-body">
               <h5 class="card-title">#Label# - <strong>#TypeOfBeer#</strong></h5>
@@ -295,8 +314,13 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
             </div>
           </div>
 
-          <!-- Cartão unitários -->
+          <!-- Single card group -->
           <div class="card">
+            <a href="#editBeerCard" data-toggle="modal">
+              <img 
+                src="/img/button--edit.png" 
+                alt="Imagem do botão de edição ou deleção">
+            </a>
             <img class="card-img-top" src="..." alt="Label image">
             <div class="card-body">
               <h5 class="card-title">#Label# - <strong>#TypeOfBeer#</strong></h5>
@@ -356,6 +380,38 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
         </div>
       </section>
     </main>
+
+  <!-- Edit modal content (Bootstrap live demo) -->
+  <div class="modal fade" id="editBeerCard">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Edit this card!</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <!-- Start inner modal form fields -->
+            <div class="form-group">
+              <label for="notes">Notes:</label>
+              <input type="text" class="form-control" id="notes">
+            </div>
+            <div class="form-group">
+              <label for="typeOfBeer" class="col-form-label">Type of Beer:</label>
+              <textarea class="form-control" id="typeOfBeer"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warning">Delete</button>
+          <button type="button" class="btn btn-warning">Edit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- external project js: jQuery / Popper.js / Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
