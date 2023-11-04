@@ -382,6 +382,7 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
     </main>
 
   <!-- Edit modal content (Bootstrap live demo) -->
+  
   <div class="modal fade" id="editBeerCard">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -396,11 +397,30 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
             <!-- Start inner modal form fields -->
             <div class="form-group">
               <label for="notes">Notes:</label>
-              <input type="text" class="form-control" id="notes">
+              <textarea
+                id="notes"
+                name="beer-notes"
+                rows="4"
+                required
+            ></textarea>
             </div>
-            <div class="form-group">
-              <label for="typeOfBeer" class="col-form-label">Type of Beer:</label>
-              <textarea class="form-control" id="typeOfBeer"></textarea>
+            <div class="dropdown">
+              <button
+                id="typeOfBeer"
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Type of Beer
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="typeOfBeer">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
             </div>
           </form>
         </div>
