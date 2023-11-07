@@ -1,8 +1,3 @@
-<!-- NOTA 22/10 | LEIA ANTES DO CÓDIGO
-> No colapsing das informações nos cards, colapsa-se as informações atreladas pelo ID na linha de código da ancora e da div de classe "collapse".
-Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um botão.
--->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,15 +10,28 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 
     <!-- Beerme CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/pages/history/history.css"/>
     
     <title>beerme!</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon--icon.png" />
   </head>
   <body>
     <header>
       <section class="top-nav">
-        <div style="font-size: 30px">beerme!</div>
+
+        <!-- logo configuration -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#"
+                  ><img id="logo" src="/images/beerme-logo.svg" alt="Logo"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
         <!-- menu hamb colapse + content -->
         <input id="menu-toggle" type="checkbox" />
@@ -55,6 +63,10 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
       </section>
     </header>
     <main>
+      <!-- audio -->
+      <audio id="beerMe" src="/song/beerMeSong.mp4"></audio>
+      <audio id="deleteBeer" src="/song/deleteBeer.mp3"></audio>
+      
       <section class="beer-card">
         <div class="card-deck">
 
@@ -62,10 +74,10 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
           <div class="card">
             <a href="#editBeerCard" data-toggle="modal">
               <img 
-                src="/img/button--edit.png" 
+                src="/images/button--edit.png" 
                 alt="Imagem do botão de edição ou deleção">
             </a>
-            <img class="card-img-top" src="/img/roletaRussa--beer.jpg" alt="Amarrar no src o pull-img do database">
+            <img class="card-img-top" src="/images/roletaRussa--beer.jpg" alt="Amarrar no src o pull-img do database">
             <div class="card-body">
               <h5 class="card-title">Roleta Russa - <strong>(American) Indian Pale Ale</strong></h5>
               <div class="rating">
@@ -127,10 +139,10 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
           <div class="card">
             <a href="#editBeerCard" data-toggle="modal">
               <img 
-                src="/img/button--edit.png" 
+                src="/images/button--edit.png" 
                 alt="Imagem do botão de edição ou deleção">
             </a>
-            <img class="card-img-top" src="/img/indica--beer.jpeg" alt="Amarrar no src o pull-img do database">
+            <img class="card-img-top" src="/images/indica--beer.jpeg" alt="Amarrar no src o pull-img do database">
             <div class="card-body">
               <h5 class="card-title">Colorado Indica - <strong>(English) Indian Pale Ale</strong></h5>
               <div class="rating">
@@ -192,7 +204,7 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
           <div class="card">
             <a href="#editBeerCard" data-toggle="modal">
               <img 
-                src="/img/button--edit.png" 
+                src="/images/button--edit.png" 
                 alt="Imagem do botão de edição ou deleção">
             </a>
             <img class="card-img-top" src="..." alt="Label image">
@@ -255,7 +267,7 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
           <div class="card">
             <a href="#editBeerCard" data-toggle="modal">
               <img 
-                src="/img/button--edit.png" 
+                src="/images/button--edit.png" 
                 alt="Imagem do botão de edição ou deleção">
             </a>
             <img class="card-img-top" src="..." alt="Label image">
@@ -318,7 +330,7 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
           <div class="card">
             <a href="#editBeerCard" data-toggle="modal">
               <img 
-                src="/img/button--edit.png" 
+                src="/images/button--edit.png" 
                 alt="Imagem do botão de edição ou deleção">
             </a>
             <img class="card-img-top" src="..." alt="Label image">
@@ -439,7 +451,7 @@ Se outro card tiver a mesma ID, colapsar-se-á todas de mesmo nomeao clicar um b
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- authors js -->
-    <script src="/pages/history/script.js"></script>
+    <script src="/pages/history/scriptHistory.js"></script>
 
   </body>
 </html>

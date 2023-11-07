@@ -22,7 +22,7 @@ section {
   margin-bottom: 20px;
 }
 
-.dropdown-container{
+.dropdown-container {
   flex-direction: column;
   /* flex-wrap: wrap; */
   width: 100%;
@@ -165,7 +165,7 @@ footer {
   background: linear-gradient(to left, #ffc000, #f5b800);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
-  height: 50px;
+  height: 55px;
   padding: 1em;
   position: fixed;
   top: 0;
@@ -184,6 +184,23 @@ footer {
 .menu > li {
   margin: 0 1rem;
   overflow: hidden;
+}
+
+/* estilo ancoras do header */
+.menu > li > a {
+  font-weight: bold;
+  color: #FFFFFC;
+  border-bottom: 5px solid #021826;
+  padding-bottom: 1px;
+  border-radius: 5px;
+  padding: 0px 5px;
+  transition: border-bottom 0.5s ease-in-out;
+  transition: padding 0.5s ease-in-out;
+}
+
+.menu > li > a:hover {
+  padding: 0px 10px;
+  border-bottom: 5px solid #021826;
 }
 
 .menu-button-container {
@@ -270,9 +287,22 @@ footer {
     padding: 0.5em 0;
     width: 100%;
     color: white;
-    background-color: #222;
+    background-color: #021826;
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+}
+
+.navbar-nav {
+  float: none;
+  margin: auto;
+}
+
+#logo {
+  width: 135px;
+  height: auto;
+  float: right ;
+  position: relative;
+  right: 55px
 }

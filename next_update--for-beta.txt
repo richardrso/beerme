@@ -1,9 +1,0 @@
-=== NEXT UPDATES FOR BETA ===
-
-> Main
-- Estudar transformar dropdown option em "preenchimento pelo usuário"
--- Impactará backend
-
-> History
-- Ampliar itens de edição
-

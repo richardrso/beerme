@@ -10,9 +10,9 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/style.css" />
     <title>beerme!</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon--icon.png" />
   </head>
   <body>
     <script
@@ -40,13 +40,13 @@
         </label>
         <ul class="menu">
           <li>
-            <a style="text-decoration: none; color: #ffffff" href="/index.html"
+            <a style="text-decoration: none" href="/index.html"
               >home</a
             >
           </li>
           <li>
             <a
-              style="text-decoration: none; color: #ffffff"
+              style="text-decoration: none"
               href="/pages/history/history.html"
               >history</a
             >
@@ -54,7 +54,7 @@
           <li>
             <a
               href="/pages/about/about.html"
-              style="text-decoration: none; color: #ffffff"
+              style="text-decoration: none"
               >about</a
             >
           </li>
@@ -65,7 +65,7 @@
       <!-- Section for user beer reviews -->
       <section>
         <div class="user-review">
-          <form>
+          <form id="form">
             <label for="beer-type">Type of Beer:</label>
             
             <input type="text" id="beer-type" name="beer-type" required />
@@ -202,11 +202,13 @@
                 >☆</label
               >
             </div>
-
-            <button type="submit">Submit Review</button>
+            <audio id="beerMe" src="/song/beerMeSong.mp4"></audio>
+            <button onclick="forml()">Submit Review</button>
           </form>
         </div>
       </section>
     </main>
   </body>
+  <!-- authors js -->
+  <script src="/script.js"></script>
 </html>
