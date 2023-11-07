@@ -28,7 +28,12 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 0px;
+}
+
+.dropdown-container label{
+  padding-top: 10px;
+
 }
 
 .beer-card {
@@ -100,7 +105,9 @@ footer {
   margin-bottom: 10px;
 }
 
-.user-review button {
+.user-review button, 
+.user-review select,
+.user-review select > option {
   background-color: #f5b800;
   color: #ffffff;
   border: none;
@@ -109,6 +116,10 @@ footer {
   cursor: pointer;
   font-weight: bold;
   width: 100%;
+}
+
+.user-review select > option {
+  background-color: #3c3c3a;
 }
 
 .user-review button:hover {

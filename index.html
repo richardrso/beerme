@@ -26,7 +26,7 @@
           <div class="container-fluid">
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <a href="#"
+                <a href="/index.html"
                   ><img id="logo" src="/images/beerme-logo.svg" alt="Logo"
                 /></a>
               </li>
@@ -80,98 +80,47 @@
               name="beer-notes"
               rows="4"
               required
-            ></textarea>
+              ></textarea>
             <div class="dropdown-container">
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Beer Family
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </div>
+              <!-- Beer family drop down -->
+              <label for="beerFamily">Beer Family:</label>
+              <select id="beerFamily" name="beerFamily" class="btn btn-secondary dropdown-toggle">
+                <option value="">Select Beer Family</option>
+                <option value="1">Lager</option>
+                <option value="2">Ale</option>
+              </select>
 
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  ABV (Alcohol by Volume) (%)
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  IBU (International Bitterness Units):
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Color
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Body
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+              <!-- ABV drop down -->
+              <label for="abv">ABV (Alcohol by Volume): </label>
+              <select id="abv" name="abv" class="btn btn-secondary dropdown-toggle">
+                <option value="">Select ABV</option>
+                <option value="1">5%</option>
+                <option value="2">10%</option>
+              </select>
+              
+              <!-- IBU drop down -->
+              <label for="ibu">IBU (International Bitterness Units)</label>
+              <select id="ibu" name="ibu" class="btn btn-secondary dropdown-toggle">
+                <option value="">Select IBU</option>
+                <option value="1">20</option>
+                <option value="2">50</option>
+              </select>
+              
+              <!-- Color drop down -->
+              <label for="colorBeer">Color:</label>
+              <select id="colorBeer" name="colorBeer" class="btn btn-secondary dropdown-toggle">
+                <option value="">Select Color:</option>
+                <option value="1">Ambar</option>
+                <option value="2">Yellow</option>
+              </select>
+              
+              <!-- Body drop down -->
+              <label for="bodyBeer">Body:</label>
+              <select id="bodyBeer" name="bodyBeer" class="btn btn-secondary dropdown-toggle">
+                <option value="">Select Body</option>
+                <option value="1">Leve</option>
+                <option value="2">Denso</option>
+              </select>
 
             <label for="beer-date">Date Consumption:</label>
             <input type="date" id="beer-date" name="beer-date" required />
