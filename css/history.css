@@ -1,0 +1,98 @@
+.card {
+  position: relative;
+  min-width: 29vw;
+  margin-top: 20px;
+  border: none;
+    /* Border none, para aplicarmos border posteriormente e sobrepor a img */
+}
+
+.fa{
+  font-size: 35px;
+}
+.checked{
+  color: #ffd700;
+}
+
+.card::after {
+    /* Resolve o problema da borda não sobrepor a img da cerveja. Neste caso, usa-se pseudo-classe ::before ou ::after para servir como primeiro filho da classe ao qual a pseudo-classe atinge. Assim a stack-order (z-index) terá relação entre a img e a border, uma vez que ambas são filhas agora. Antes, como uma era pai e outro filho, não compartilhavam o mesmo z-index, mexer no z-index do .card alteraria junto a img, o z-index da img só se relacionaria a quem está dentro de .card.
+  
+    ::before e ::after serve para aplicar uma segunda estilização acima da classe atingida, seja antes (a esquerda) ou depois (a direita), sendo esta pseudo-classe interpretada como a filha imediata da classe atingida. Para sobrepor, execute as seguintes configurações: */
+  content: "";
+    /* This sets the content of the pseudo-element. In this case, it’s an empty string, which means the pseudo-element will not have any text content. */
+  position: absolute;
+    /* This positions the pseudo-element absolutely within the .card element. This means it will be positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+    /* These sequence of properties position the pseudo-element at the very edge of the .card element, effectively creating a border around the .card. */
+  border: 1px solid #ffe491;
+  border-radius: 10px;
+    /* Border configuration */
+  z-index: 1;
+    /* This sets the stack order of the pseudo-element. A higher z-index means the element will be closer to the top of the stacking order, or closer to the viewer. In this case, the pseudo-element will appear on top of the image, creating the effect of a border in front of the image. */
+}
+
+.rating_history{
+  flex-direction: row;
+}
+
+/***** Inner card content *****/
+.card > a{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+    /* z-index 2, pois o card::after tá z-index 1 e se sobrepor ele deixa o botão não funcional */
+}
+
+.card > a > img{
+  max-width: 35px;
+}
+
+.card > img{
+  width: fit-content;
+  max-height: 300px;
+  align-self: center;
+  padding: 20px;
+}
+
+.rating > label{
+  font-size: 35px;
+}
+
+.btn{
+  color: #fff;
+}
+
+#button-seeMore {
+  margin:
+    0px /*top*/
+    0px /*right*/
+    15px /*bottom*/
+    15px /*left*/;
+  background-color: #f5b800;
+  border-color: #f5b800;
+  z-index: 2;
+    /* z-index 2, pois o card::after tá z-index 1 e se sobrepor ele deixa o botão não funcional */
+}
+
+/***** Inner model content *****/
+.form-group textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.dropdown > button {
+  background-color: #f5b800;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
